@@ -1,0 +1,52 @@
+h1{
+    background-color:rgb(206, 195, 149);
+    border: 1px solid black;
+    width: 70px;
+}
+
+
+@keyframes change-color{
+    0%{background-color:rgb(0, 0, 0) ;}
+    5%{background-color:rgb(20, 20, 20) ;}
+    10%{background-color:rgb(40, 40, 40) ;}
+    15%{background-color:rgb(60, 60, 60) ;}
+    20%{background-color:rgb(80, 80, 80) ;}
+    25%{background-color:rgb(100, 100, 100) ;}
+    30%{background-color:rgb(120, 120, 120) ;}
+    35%{background-color:rgb(140, 140, 140) ;}
+    40%{background-color:rgb(160, 160, 160) ;}
+    45%{background-color:rgb(180, 180, 180) ;}
+    50%{background-color:rgb(160, 160, 160) ;}
+    55%{background-color:rgb(140, 140, 140) ;}
+    60%{background-color:rgb(120, 120, 120) ;}
+    65%{background-color:rgb(100, 100, 100) ;}
+    70%{background-color:rgb(80, 80, 80) ;}
+    75%{background-color:rgb(60, 60, 60) ;}
+    80%{background-color:rgb(40, 40, 40) ;}
+    85%{background-color:rgb(20, 20, 20) ;}
+    90%{background-color:rgb(10, 10, 10) ;}
+    95%{background-color:rgb(5, 5, 5) ;}
+    100%{background-color:rgb(0, 0, 0) ;}
+
+}
+
+.aq{
+    width: 30px;
+    height: 30px;
+    background-color:rgb(0, 0, 0) ;
+    border: 2px solid black;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.aq-animation{
+    animation-name:change-color;
+    animation-duration: 3.25s;
+    animation-iteration-count: infinite;
+}
+
+h4{
+    margin:5px;
+    color:red;
+}

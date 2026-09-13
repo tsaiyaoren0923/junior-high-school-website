@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"></meta>
+        <meta name="descrcription" content="紀念11班的活躍紀錄"/>
+        <meta name="author" content="蔡曜任"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>class-2022-school-life</title>
+        <link rel="stylesheet" href="animation.css"/>
+        <link rel="stylesheet" href="page3.css"/>
+    </head>
+    <body style="background-color:rgb(249, 228, 191) ;">
+        <h1 style="background-color:rgb(182, 171, 110); border: 1px solid black;width: 175px;">班級合照籍</h1>
+        <hr/>
+
+	    <!-- 建立下拉式選單 -->
+        <label for="events">選擇活動：</label>
+        <select id="events">
+            <option value="event1">一年級運動會</option>
+            <option value="event2">一年級戶外教學</option>
+            <option value="event3">二年級倒數紀念</option>
+            <option value="event4">二年級運動會</option>
+            <option value="event5">三年級畢旅</option>
+            <option value="event6">三年級運動會</option>
+        </select>
+
+         <!-- 建立標題和圖片 -->
+        <h3 id="title">一年級運動會</h3>
+        <img id="image" src="DSC_1431_00001.jpg" width="800px">
+
+        <script>
+        // 取得下拉式選單和標題、圖片的元素
+        const select = document.getElementById('events');
+        const title = document.getElementById('title');
+        const image = document.getElementById('image');
+
+        // 設定選單的事件監聽器，當選項改變時，改變標題和圖片
+        select.addEventListener('change', function() {
+            if (this.value === 'event1') {
+                title.textContent = '一年級運動會';
+                image.src = 'DSC_1431_00001.jpg';
+            } 
+            else if (this.value === 'event2') {
+                title.textContent = '一年級戶外教學';
+                image.src = 'DSC_2000_00001.jpg';
+            } 
+            else if (this.value === 'event3') {
+                title.textContent = '二年級倒數紀念';
+                image.src = '_DSC0696_00001.jpg';
+            } 
+            else if (this.value === 'event4') {
+                title.textContent = '二年級運動會';
+                image.src = '_DSC0412_00001.jpg';
+            } 
+            else if (this.value === 'event5') {
+                title.textContent = '三年級畢旅';
+                const images = ['3畢1.jpg', '3畢2.jpg','3畢男.jpg','3畢女.jpg'];
+                let index = 0;
+                image.src = images[index];
+                setInterval(function() {
+                    index = (index + 1) % images.length;
+                    image.src = images[index];
+                }, 3000);
+            } 
+            else if (this.value === 'event6') {
+                title.textContent = '三年級運動會';
+                const images = ['3運1.jpg', '3運2.jpg','3運3.jpg'];
+                let index = 0;
+                image.src = images[index];
+                setInterval(function() {
+                    index = (index + 1) % images.length;
+                    image.src = images[index];
+                }, 3000);
+        }
+    });
+</script>
+        <p style="color:red;"><b>感謝吳東璟照片拍攝、提供。</b></p>
+
+        <div style="background-color:black;width: 170px; height: 25px;border: 2px;">
+        <span style="color:goldenrod; display: inline;">※技術支援:chatGPT※</span>
+        </div>
+
+        <br/>
+        <br/>
+        <a href="index.1.6.0.html">首頁➡️</a>
+        <a href="page2.1.6.0.html">第二頁➡️</a>
+        <a href="page4.1.6.0.html">第四頁➡️</a>
+        <br/>
+        <hr/>
+        <div class="aq aq-animation">©</div>
+      
+
+    </body>
